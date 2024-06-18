@@ -5,13 +5,15 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 
 import ButtonScreen from './src/screens/ButtonScreen';
+import AboutScreen from './src/screens/AboutScreen';
 const Stack=createNativeStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Button Screen" component={ButtonScreen} />
+        {/* <Stack.Screen name="Button Screen" component={ButtonScreen} /> */}
+        <Stack.Screen name="Button Screen" component={AboutScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
